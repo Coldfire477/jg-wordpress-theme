@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Custom test
+ * Customomize API
  *
  * @package justgreat
  */
