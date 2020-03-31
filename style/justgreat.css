@@ -1,0 +1,181 @@
+body{
+    overflow-x: hidden;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin: 15px 15px;
+}
+
+.header {
+    height: 198px;
+    width: 100%;
+    background: #cccccc;
+    border-bottom:2px solid #929292 ;
+}
+
+.topHeader{
+    height: 140px;
+    max-width: 1100px;
+    background: #f0f0f0;
+    margin: auto;
+}
+
+h1{
+    position: relative;
+    
+    top: 20px;
+}
+
+.slogan {
+    position: relative;
+    left: 145px;
+    color: #007bff;
+}
+
+.comportementNav{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.wrap{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.carousel{
+    max-width: 1100px;
+    height: 300px;
+    margin: 20px auto 0 auto;
+    border: 5px solid #007bff;
+}
+
+.modTitle{
+    font-variant: small-caps;
+}
+
+.modDate{
+    color: #929292;
+    font-variant: small-caps;
+    font-size: small;
+}
+
+.columnAlignement{
+    width: 300px;
+    float: left;
+}
+
+.social{
+    width: 200px;
+    margin: auto;
+}
+
+.facebook{
+    background: url(images/facebook.png)no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.instagram{
+    background: url(images/instagram.png)no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.linkdin{
+    background: url(images/linkdin.png)no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.content{
+    width: 40vw;
+    min-height: 500px;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+footer{
+    height: 120px;
+    width: 100%;
+    background: #cccccc;
+}
+
+.botNavigation{
+    width: 350px;
+    margin: auto;
+}
+
+.separatorMod{
+    margin-top: 31px;
+}
+
+.copy{
+    width: 250px;
+    margin: auto;
+    color: #929292;
+}
+
+.articleBehavior {
+    width: 65%;
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    border-radius: 10px;
+    transition: ease-in-out 0.3s;
+}
+
+.articleBehavior:hover{
+    transform: scale(1.02, 1.02);
+}
+
+.current-menu-item a{  
+    font-weight: bold;
+}
+
+.articleConteneur{
+    width: 80%;
+    margin: 40px auto;
+}
+
+@media screen and (max-width: 1200px) {    
+    .carousel{
+        display:none;
+    }
+   
+    .content{
+        width: 50vw;   
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .first{
+        display: none;
+    }
+    .second{
+        display: none;
+    }
+    .content{
+        width: 80vw;
+    }  
+}
+
+@media screen and (max-width: 575px){
+    .form-inline{
+        display:none;
+    }
+    .content .h3{
+        margin-top: 100px;
+    }
+    .articleBehavior:first-of-type{
+        margin-top: 150px !important;
+    }
+    .articleBehavior{
+        margin:20px 20px !important;
+    }
+}
