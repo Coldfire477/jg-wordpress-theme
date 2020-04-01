@@ -16,12 +16,13 @@
 ?>
 
     <article class="articleBehavior mt-4" <?= $style; ?>>
-        <a href="<?php the_permalink() ?>"> <p class="h2"><?php the_title(); ?></p></a><p class="modDate"><?php the_author() ?> - <?= get_the_date() ?></p>
+        <a href="<?php the_permalink() ?>" style="color:<?= get_theme_mod('blog_link_color', '#007bff') ?>;"> <p class="h2"><?php the_title(); ?></p></a><p class="modDate"><?php the_author() ?> - <?= get_the_date() ?></p>
+        <div class="justgreat-thumbnail mb-4"><?php the_post_thumbnail('justgreat_thumbnail'); ?></div>
         <?php the_excerpt(  ) ?>
-        <a href="<?php the_permalink() ?>"><p>Read more...</p></a>
+        <a href="<?php the_permalink() ?>" style="color:<?= get_theme_mod('blog_link_color', '#007bff') ?>;"><p><?php _e('Read more...','justgreat') ?></p></a>
     </article>
  <?php endwhile; else : ?>
-    <p class="h2">Aucun articles ;(</p>
+    <p class="h2"><?php _e('Aucun articles', 'justgreat') ?> ;(</p>
  <?php endif; ?>
 
 

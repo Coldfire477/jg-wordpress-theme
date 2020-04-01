@@ -1,1 +1,8 @@
-/*admin settings
+
+/**
+ * Admin css
+ */
+
+ #_customize-input-facebook, #_customize-input-instagram, #_customize-input-linkedin{
+     width: 80%;
+ }
