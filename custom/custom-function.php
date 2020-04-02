@@ -7,9 +7,15 @@ function logo_reader()
 
     if ($id != 0) {
         $url = wp_get_attachment_url($id);
-        if (stripos($url, '.png') !== FALSE) { // for a .png logo upload
+        if (stripos($url, '-scaled.png') !== FALSE) { //for a -scaled.png image -> upload
+            $mod_url = str_replace("-scaled.png", "-80x80.png", $url);
+            echo $mod_url;
+        } else if (stripos($url, '.png') !== FALSE) { // for a .png logo upload
             $mod_url = str_replace(".png", "-80x80.png", $url);
             echo  $mod_url;
+        } else if (stripos($url, '-scaled.jpg') !== FALSE) { //for a -scaled.jpg image -> upload
+            $mod_url = str_replace("-scaled.jpg", "-80x80.jpg", $url);
+            echo $mod_url;
         } else if (stripos($url, '.jpg') !== FALSE) { // for a .jpg logo upload
             $mod_url = str_replace(".jpg", "-80x80.jpg", $url);
             echo  $mod_url;
@@ -20,29 +26,29 @@ function logo_reader()
 }
 
 //Modify the margin of the title if there is a logo or not
-function margin_title_modify(){
+function margin_title_modify()
+{
     $logo = get_theme_mod('justgreat_logo');
 
-    if ($logo == 0){
-        echo '-70px !important;';     
-    }
-    else{
+    if ($logo == 0) {
+        echo '-70px !important;';
+    } else {
         echo '0px !important';
     }
 }
 
 //Modify the margin of the slogan if there is a logo or not
-function margin_slogan_modify(){
+function margin_slogan_modify()
+{
     $logo = get_theme_mod('justgreat_logo');
-    
-    if ($logo == 0){
+
+    if ($logo == 0) {
         echo '75px !important;';
-    }
-    else{
+    } else {
         echo '135px !important';
     }
 }
-    
+
 
 //Taking each picture of the carousel and turning it into a 1090x290 link to display
 function carousel_image_reader($select)
@@ -50,13 +56,16 @@ function carousel_image_reader($select)
     $id = get_theme_mod('justgreat_carousel1');
     $id2 = get_theme_mod('justgreat_carousel2');
     $id3 = get_theme_mod('justgreat_carousel3');
-    
+
 
     //Première image du carousel
-    if ($select =='1') {
+    if ($select == '1') {
         if ($id != 0) {
             $url = wp_get_attachment_url($id);
-            if (stripos($url, '.jpg') !== FALSE) { //for a .jpg image -> upload
+            if (stripos($url, '-scaled.jpg') !== FALSE) { //for a -scaled.jpg image -> upload
+                $mod_url = str_replace("-scaled.jpg", "-1090x290.jpg", $url);
+                echo $mod_url;
+            } else if (stripos($url, '.jpg') !== FALSE) { //for a .jpg image -> upload
                 $mod_url = str_replace(".jpg", "-1090x290.jpg", $url);
                 echo $mod_url;
             } else {
@@ -68,7 +77,10 @@ function carousel_image_reader($select)
     if ($select == '2') {
         if ($id2 != 0) {
             $url2 = wp_get_attachment_url($id2);
-            if (stripos($url2, '.jpg') !== FALSE) { //for a .jpg image -> upload
+            if (stripos($url2, '-scaled.jpg') !== FALSE) { //for a -scaled.jpg image -> upload
+                $mod_url2 = str_replace("-scaled.jpg", "-1090x290.jpg", $url2);
+                echo $mod_url2;
+            } else if (stripos($url2, '.jpg') !== FALSE) { //for a .jpg image -> upload
                 $mod_url2 = str_replace(".jpg", "-1090x290.jpg", $url2);
                 echo $mod_url2;
             } else {
@@ -80,7 +92,10 @@ function carousel_image_reader($select)
     if ($select == '3') {
         if ($id3 != 0) {
             $url3 = wp_get_attachment_url($id3);
-            if (stripos($url3, '.jpg') !== FALSE) { //for a .jpg image -> upload
+            if (stripos($url3, '-scaled.jpg') !== FALSE) { //for a -scaled.jpg image -> upload
+                $mod_url3 = str_replace("-scaled.jpg", "-1090x290.jpg", $url3);
+                echo $mod_url3;
+            } else if (stripos($url3, '.jpg') !== FALSE) { //for a .jpg image -> upload
                 $mod_url3 = str_replace(".jpg", "-1090x290.jpg", $url3);
                 echo $mod_url3;
             } else {
@@ -107,34 +122,24 @@ function fixed_banner_display()
 }
 
 //Display the social's picture when it's set
-function justgreat_socials(){
+function justgreat_socials()
+{
     $facebook = esc_html(get_theme_mod('facebook', ''));
     $insta = esc_html(get_theme_mod('instagram', ''));
     $linkdin = esc_html(get_theme_mod('linkedin', ''));
     $imgface = get_template_directory_uri() . '/images/facebook.png';
     $imginsta = get_template_directory_uri() . '/images/instagram.png';
-    $imglinkd= get_template_directory_uri() . '/images/linkdin.png';
+    $imglinkd = get_template_directory_uri() . '/images/linkdin.png';
 
     echo '<div class="justgreat_social">';
-    if($facebook != '')
-    {
+    if ($facebook != '') {
         echo '<a href="' . $facebook . '" target="_blank"><img src="' . $imgface . '"></a>';
     }
-    if($insta != '')
-    {
+    if ($insta != '') {
         echo '<a href="' . $insta . '" target="_blank"><img src="' . $imginsta . '"></a>';
     }
-    if($linkdin != '')
-    {
+    if ($linkdin != '') {
         echo '<a href="' . $linkdin . '" target="_blank"><img src="' . $imglinkd . '"></a>';
     }
     echo '</div>';
 }
-
-
-
-
-
-
-
-?>
