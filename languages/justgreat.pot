@@ -1,7 +1,8 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: justgreat\n"
-"POT-Creation-Date: 2020-04-01 23:42+0200\n"
+"POT-Creation-Date: 2020-04-02 12:08+0200\n"
 "PO-Revision-Date: 2020-04-01 23:42+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -15,11 +16,8 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_n;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: custom/contact-custom.php:32
-msgid ""
-"NOTE: A contact form such as this would require some way of emailing the "
-"input to an email address. In a close futur this won't be necessary but for "
-"now you'll have to install a form extension"
+#: custom/contact-custom.php:13
+msgid "Contact us"
 msgstr ""
 
 #: custom/justgreat-customize.php:19
