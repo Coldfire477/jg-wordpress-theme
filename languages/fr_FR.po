@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: justgreat\n"
-"POT-Creation-Date: 2020-04-02 12:08+0200\n"
-"PO-Revision-Date: 2020-04-02 12:08+0200\n"
+"POT-Creation-Date: 2020-04-03 10:05+0200\n"
+"PO-Revision-Date: 2020-04-03 10:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -55,49 +55,68 @@ msgstr "Images du carousel"
 msgid "Select your pictures for the carousel"
 msgstr "Sélectionner les images pour les carousel"
 
-#: custom/justgreat-customize.php:158
+#: custom/justgreat-customize.php:121
+msgid "The pictures must be at least 1090px width, otherwise it won't work !"
+msgstr ""
+"Les images doivent faire 1090px de large minimum, sinon ça ne fonctionnera "
+"pas !"
+
+#: custom/justgreat-customize.php:159
 msgid "Carousel settings"
 msgstr "Paramètres du carousel"
 
-#: custom/justgreat-customize.php:170
+#: custom/justgreat-customize.php:171
 msgid "Enable / Disable the carousel"
 msgstr "Activer / Désactiver le carousel"
 
-#: custom/justgreat-customize.php:175
+#: custom/justgreat-customize.php:176
 msgid "Enable"
 msgstr "Activer"
 
-#: custom/justgreat-customize.php:176
+#: custom/justgreat-customize.php:177
 msgid "Fixed banner"
 msgstr "Bannière fixe"
 
-#: custom/justgreat-customize.php:177
+#: custom/justgreat-customize.php:178
 msgid "Disable"
 msgstr "Désactiver"
 
-#: custom/justgreat-customize.php:190
+#: custom/justgreat-customize.php:191
 msgid "Fixed banner picture"
 msgstr "Image de bannière fixe"
 
-#: custom/justgreat-customize.php:198
+#: custom/justgreat-customize.php:192
+msgid "The picture must be at least 1090px width, otherwise it won't work !"
+msgstr ""
+"L'image doit faire 1090px de large minimum, sinon ça ne fonctionnera pas !"
+
+#: custom/justgreat-customize.php:200
 msgid "Column settings"
 msgstr "Paramètres de colonne"
 
-#: custom/justgreat-customize.php:210
+#: custom/justgreat-customize.php:212
 msgid "Widget column side"
 msgstr "Coté de la colonne de widget"
 
-#: custom/justgreat-customize.php:215
+#: custom/justgreat-customize.php:217
 msgid "Left"
 msgstr "Gauche"
 
-#: custom/justgreat-customize.php:216
+#: custom/justgreat-customize.php:218
 msgid "Right"
 msgstr "Droite"
 
-#: custom/justgreat-customize.php:222
+#: custom/justgreat-customize.php:224
 msgid "Config my socials"
 msgstr "Configurer mes réseaux sociaux"
+
+#: custom/justgreat-customize.php:236
+msgid ""
+"Paste your social links in the inputs, the format must be like \"http://www."
+"mysocial.com\""
+msgstr ""
+"Collez vos liens sociaux dans les champs de texte, le format doit "
+"ressembler à ça: \"http://www.mysocial.com\""
 
 #: index.php:22 widgets/widget-function.php:16
 msgid "Read more..."

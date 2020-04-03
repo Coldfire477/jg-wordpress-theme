@@ -13,7 +13,7 @@
     <div class="header">
         <div class="topHeader">
             <div class="logo" style="background: url(<?php logo_reader(); ?>)no-repeat !important;"></div>
-            <h1 class="display-4" style="color:<?= get_theme_mod('title_color', '#000'); ?> !important;left: <?php margin_title_modify() ?>"><?php echo get_bloginfo('name') ?></h1>
+            <a href="<?= home_url() ?>"><h1 class="display-4" style="color:<?= get_theme_mod('title_color', '#000'); ?> !important;left: <?php margin_title_modify() ?>"><?php echo get_bloginfo('name') ?></h1></a>
             <p class="lead slogan" style="color:<?= get_theme_mod('slogan_color', '#007bff'); ?> !important;left: <?php margin_slogan_modify() ?>"><?php echo get_bloginfo('description') ?></p>
             <div class="clear"></div>
         </div>

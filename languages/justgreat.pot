@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: justgreat\n"
-"POT-Creation-Date: 2020-04-02 12:08+0200\n"
+"POT-Creation-Date: 2020-04-03 10:05+0200\n"
 "PO-Revision-Date: 2020-04-01 23:42+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -56,48 +56,60 @@ msgstr ""
 msgid "Select your pictures for the carousel"
 msgstr ""
 
-#: custom/justgreat-customize.php:158
+#: custom/justgreat-customize.php:121
+msgid "The pictures must be at least 1090px width, otherwise it won't work !"
+msgstr ""
+
+#: custom/justgreat-customize.php:159
 msgid "Carousel settings"
 msgstr ""
 
-#: custom/justgreat-customize.php:170
+#: custom/justgreat-customize.php:171
 msgid "Enable / Disable the carousel"
 msgstr ""
 
-#: custom/justgreat-customize.php:175
+#: custom/justgreat-customize.php:176
 msgid "Enable"
 msgstr ""
 
-#: custom/justgreat-customize.php:176
+#: custom/justgreat-customize.php:177
 msgid "Fixed banner"
 msgstr ""
 
-#: custom/justgreat-customize.php:177
+#: custom/justgreat-customize.php:178
 msgid "Disable"
 msgstr ""
 
-#: custom/justgreat-customize.php:190
+#: custom/justgreat-customize.php:191
 msgid "Fixed banner picture"
 msgstr ""
 
-#: custom/justgreat-customize.php:198
+#: custom/justgreat-customize.php:192
+msgid "The picture must be at least 1090px width, otherwise it won't work !"
+msgstr ""
+
+#: custom/justgreat-customize.php:200
 msgid "Column settings"
 msgstr ""
 
-#: custom/justgreat-customize.php:210
+#: custom/justgreat-customize.php:212
 msgid "Widget column side"
 msgstr ""
 
-#: custom/justgreat-customize.php:215
+#: custom/justgreat-customize.php:217
 msgid "Left"
 msgstr ""
 
-#: custom/justgreat-customize.php:216
+#: custom/justgreat-customize.php:218
 msgid "Right"
 msgstr ""
 
-#: custom/justgreat-customize.php:222
+#: custom/justgreat-customize.php:224
 msgid "Config my socials"
+msgstr ""
+
+#: custom/justgreat-customize.php:236
+msgid "Paste your social links in the inputs, the format must be like \"http://www.mysocial.com\""
 msgstr ""
 
 #: index.php:22 widgets/widget-function.php:16
@@ -121,8 +133,7 @@ msgid "Take a great start with our JustGreat wordpress theme"
 msgstr ""
 
 #: setupTheme/justgreat-settings.php:34
-msgid ""
-"This theme has been made to be visually lite, easy to use and fully free."
+msgid "This theme has been made to be visually lite, easy to use and fully free."
 msgstr ""
 
 #: sidebar-homepage.php:6

@@ -17,7 +17,7 @@ class justgreat_customize
 
         $wp_customize->add_section('color_modification_section', array(
             'title' => __('Modify the website colors', 'justgreat'),
-            'priority' => 30,
+            'priority' => 150,
             'capability' => 'edit_theme_options',
         ));
 //title color modification
@@ -85,7 +85,7 @@ class justgreat_customize
 //logo upload / modification
         $wp_customize->add_section('logo_section', array(
             'title' => __('Add / Modify the logo', 'justgreat'),
-            'priority' => 30,
+            'priority' => 150,
             'capability' => 'edit_theme_options',
         ));
 
@@ -106,7 +106,7 @@ class justgreat_customize
 //carousel modification
         $wp_customize->add_section('carousel_section', array(
             'title' => __('Carousel pictures', 'justgreat'),
-            'priority' => 30,
+            'priority' => 150,
             'capability' => 'edit_theme_options',
         ));
 
@@ -118,6 +118,7 @@ class justgreat_customize
 
         $wp_customize->add_control(new WP_Customize_Media_Control($wp_customize, 'justgreat_carousel1', array(
             'label' => __('Select your pictures for the carousel', 'justgreat'),
+            'description' => __('The pictures must be at least 1090px width, otherwise it won\'t work !', 'justgreat'),
             'section' => 'carousel_section',
             'settings' => 'justgreat_carousel1',
             
@@ -156,7 +157,7 @@ class justgreat_customize
         //carousel parameters
         $wp_customize->add_section('carousel_parameters_section', array(
             'title' => __('Carousel settings', 'justgreat'),
-            'priority' => 30,
+            'priority' => 150,
             'capability' => 'edit_theme_options',
         ));
 
@@ -188,6 +189,7 @@ class justgreat_customize
 
         $wp_customize->add_control(new WP_Customize_Media_Control($wp_customize, 'justgreat_fixed_banner', array(
             'label' => __('Fixed banner picture', 'justgreat'),
+            'description' => __('The picture must be at least 1090px width, otherwise it won\'t work !', 'justgreat'),
             'section' => 'carousel_parameters_section',
             'settings' => 'justgreat_fixed_banner',
             
@@ -196,7 +198,7 @@ class justgreat_customize
          //column parameters
          $wp_customize->add_section('column_parameters_section', array(
             'title' => __('Column settings', 'justgreat'),
-            'priority' => 30,
+            'priority' => 150,
             'capability' => 'edit_theme_options',
         ));
 
@@ -220,9 +222,23 @@ class justgreat_customize
         //socials parameters
         $wp_customize->add_section('social_section', array(
             'title' => __('Config my socials', 'justgreat'),
-            'priority' => 30,
+            'priority' => 150,
             'capability' => 'edit_theme_options',
         ));
+
+        $wp_customize->add_setting('description', array(
+            'default' => '',
+            'capability' => 'edit_theme_options',
+            'transport' => 'refresh',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'description', array(
+            'description' => __('Paste your social links in the inputs, the format must be like "http://www.mysocial.com"', 'justgreat'),
+            'label' => '',
+            'section' => 'social_section',
+            'settings' => 'description',  
+            'type'     => 'hidden',
+        )));
 
         $wp_customize->add_setting('facebook', array(
             'default' => '',
@@ -233,8 +249,7 @@ class justgreat_customize
         $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'facebook', array(
             'label' => 'Facebook',
             'section' => 'social_section',
-            'settings' => 'facebook',
-            'type' => 'input',      
+            'settings' => 'facebook',     
         )));
 
         $wp_customize->add_setting('instagram', array(
@@ -246,8 +261,7 @@ class justgreat_customize
         $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'instagram', array(
             'label' => 'Instagram',
             'section' => 'social_section',
-            'settings' => 'instagram',
-            'type' => 'input',           
+            'settings' => 'instagram',           
         )));
 
         $wp_customize->add_setting('linkedin', array(
@@ -259,8 +273,7 @@ class justgreat_customize
         $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'linkedin', array(
             'label' => 'LinkedIn',
             'section' => 'social_section',
-            'settings' => 'linkedin',
-            'type' => 'input',           
+            'settings' => 'linkedin',          
         )));
 
 

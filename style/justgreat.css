@@ -23,6 +23,10 @@ body{
     margin: auto;
 }
 
+.topHeader a{
+    text-decoration: none;
+}
+
 h1{
     position: relative;
     
@@ -31,6 +35,7 @@ h1{
 
 .slogan {
     position: relative;
+    top: 10px;
 }
 
 .comportementNav{
@@ -105,8 +110,16 @@ footer{
 }
 
 .botNavigation{
-    width: 350px;
+    min-width: 360px;
     margin: auto;
+}
+
+.botNavigation li:first-of-type {
+    margin-left: auto;
+}
+
+.botNavigation li:last-of-type {
+    margin-right: auto;
 }
 
 .separatorMod{
@@ -221,6 +234,10 @@ footer{
 .wpcf7-submit:hover{
     background-color: #cccccc;
     color: #495057;
+}
+
+.paypal-button-container{
+    width: 250px;
 }
 
 @media screen and (max-width: 1200px) {    
