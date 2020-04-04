@@ -10,7 +10,7 @@
             ])
             ?>
         <div class="copy">
-            <p>Copyright © JustGreat Template</p>
+            <p>Copyright © <?= current_time('Y') ?> <a href="http://just-web.live/" target="blank" style="color:cadetblue !important">JustGreat</a> by Just-Web</p>
         </div>
 </footer>
 

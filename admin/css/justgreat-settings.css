@@ -6,3 +6,7 @@
  #_customize-input-facebook, #_customize-input-instagram, #_customize-input-linkedin{
      width: 80%;
  }
+
+ p {
+     font-size: medium;
+ }

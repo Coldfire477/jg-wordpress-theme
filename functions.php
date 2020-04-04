@@ -1,11 +1,11 @@
 <?php
 
 //Page displayed in the template menu that will explain how to configure the website
-require_once('setupTheme/justgreat-settings.php');
+require_once('admin/justgreat-settings.php');
 //The customize API 
-require_once('custom/justgreat-customize.php');
+require_once('template-parts/justgreat-customize.php');
 //Regroup the functions for the customize API to be fully working
-require_once('custom/custom-function.php');
+require_once('template-parts/custom-function.php');
 //The latestNews widget
 require_once('widgets/latestNews-widget.php');
 //The functions that makes the widgets working
@@ -17,7 +17,7 @@ require_once('widgets/social-widget.php');
 function justgreat_register_scripts()
 {
     wp_register_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', []);
-    wp_register_style('justgreat', get_template_directory_uri() . '/style/justgreat.css', []);
+    wp_register_style('justgreat', get_template_directory_uri() . '/inc/style/justgreat.css', []);
     wp_register_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', ['popper', 'jquery'], false, true);
     wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', [], false, true);
     if (!is_customize_preview()) {

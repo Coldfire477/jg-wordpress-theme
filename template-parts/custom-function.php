@@ -127,9 +127,9 @@ function justgreat_socials()
     $facebook = esc_html(get_theme_mod('facebook', ''));
     $insta = esc_html(get_theme_mod('instagram', ''));
     $linkdin = esc_html(get_theme_mod('linkedin', ''));
-    $imgface = get_template_directory_uri() . '/images/facebook.png';
-    $imginsta = get_template_directory_uri() . '/images/instagram.png';
-    $imglinkd = get_template_directory_uri() . '/images/linkdin.png';
+    $imgface = get_template_directory_uri() . '/inc/images/facebook.png';
+    $imginsta = get_template_directory_uri() . '/inc/images/instagram.png';
+    $imglinkd = get_template_directory_uri() . '/inc/images/linkdin.png';
 
     echo '<div class="justgreat_social">';
     if ($facebook != '') {

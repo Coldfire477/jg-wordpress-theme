@@ -1,0 +1,268 @@
+body{
+    overflow-x: hidden;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin: 15px 15px;
+}
+
+.header {
+    height: 198px;
+    width: 100%;
+    background: #cccccc;
+    border-bottom:2px solid #929292 ;
+}
+
+.topHeader{
+    height: 140px;
+    max-width: 1100px;
+    background: #f0f0f0;
+    margin: auto;
+}
+
+.topHeader a{
+    text-decoration: none;
+}
+
+h1{
+    position: relative;
+    
+    top: 20px;
+}
+
+.slogan {
+    position: relative;
+    top: 10px;
+}
+
+.comportementNav{
+    max-width: 1100px;
+    margin: auto;
+    z-index: 1;
+}
+
+.wrap{
+    max-width: 1100px;
+    min-height: 650px;
+    margin: auto;
+}
+
+.carousel{
+    max-width: 1100px;
+    height: 300px;
+    margin: 20px auto 0 auto;
+    border: 5px solid #007bff;
+}
+
+.modTitle{
+    font-variant: small-caps;
+}
+
+.modDate{
+    color: #929292;
+    font-variant: small-caps;
+    font-size: small;
+}
+
+.social{
+    width: 200px;
+    margin: auto;
+}
+
+.facebook{
+    background: url(images/facebook.png)no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.instagram{
+    background: url(images/instagram.png)no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.linkdin{
+    background: url(images/linkdin.png)no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.about-content{
+    width: 50vw;
+    margin: auto; 
+}
+
+.about-content .has-large-font-size{
+    text-align: center;
+}
+
+.clear{
+    clear: both;
+}
+
+footer{
+    height: 120px;
+    width: 100%;
+    background: #cccccc;
+}
+
+.botNavigation{
+    min-width: 360px;
+    margin: auto;
+}
+
+.botNavigation li:first-of-type {
+    margin-left: auto;
+}
+
+.botNavigation li:last-of-type {
+    margin-right: auto;
+}
+
+.separatorMod{
+    margin-top: 31px;
+}
+
+.copy{
+    width: 100%;
+    text-align: center;
+    color: #929292;
+}
+
+.articleBehavior {
+    width: 65%;
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    border-radius: 10px;
+    transition: ease-in-out 0.3s;
+}
+
+.articleBehavior:hover{
+    transform: scale(1.02, 1.02);
+}
+
+.current-menu-item a{  
+    font-weight: bold;
+}
+
+.articleConteneur{
+    width: 80%;
+    margin: 40px auto;
+}
+
+.justgreat-thumbnail{
+    width: 450px;
+    margin: auto;
+}
+
+.justgreat_social{
+    margin: 10px auto 0 auto;
+}
+
+.justgreat_social img{
+    margin-right: 15px;
+    transition: ease-in-out 0.3s;
+}
+
+.justgreat_social img:hover{
+    transform: scale(1.1, 1.1);
+}
+
+/*contact form part*/
+.wpcf7-form{
+    width: 40vw;
+    min-height: 500px;
+    margin-top: 1.5rem !important;
+    margin-left: 1.5rem !important;
+    float: left;
+}
+
+.wpcf7-form label{
+    width: 100%;
+}
+
+.wpcf7-form input[type='text'],input[type='email']{
+    display: block;
+    width: 100% !important;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.wpcf7-textarea{
+    display: block;
+    width: 100%;
+    min-height: 150px;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.wpcf7-submit{
+    color: #808080;
+    background-color: #f8f9fa;
+    border-color: #cccccc;
+    display: inline-block;
+    font-weight: 400;
+    border: 1px solid #cccccc;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.wpcf7-submit:hover{
+    background-color: #cccccc;
+    color: #495057;
+}
+
+.paypal-button-container{
+    width: 250px;
+}
+
+@media screen and (max-width: 1200px) {    
+    .carousel{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .justgreat-thumbnail{
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 360px) {
+    .articleBehavior{
+        width: 85%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .slogan{
+        display: none;
+    }
+    .display-4{
+        font-size: 3rem !important;
+    }
+
+}
