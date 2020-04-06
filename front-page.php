@@ -5,7 +5,7 @@ $hideCarousel = get_theme_mod('carousel_enable');
 
 if ($hideCarousel == 'enable') { ?>
     <!-- Start of the Carousel part -->
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border:5px solid <?= get_theme_mod('carousel_contour_color', '#007bff') ?> !important;">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border:5px solid <?php echo esc_attr(get_theme_mod('carousel_contour_color', '#007bff')) ?> !important;">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="<?php carousel_image_reader('1') ?>" class="d-block w-100" alt="">
@@ -42,8 +42,7 @@ if ($hideCarousel == 'enable') { ?>
     <div class="clear"></div>
     <!--End of the fixed banner part -->
 
-<?php   } else {
-} ?>
+<?php } ?>
 
 <div class="container">
     <div class="row">

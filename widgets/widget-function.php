@@ -13,7 +13,7 @@ function displayMyNews(){
         <h6 class="card-subtitle mt-4"><?php the_title() ?></h6>
         <p class="modDate ml-4">- <?php the_date() ?></p>
         <p class="card-text"><?php the_excerpt() ?></p>
-        <a href="<?php the_permalink() ?>" class="card-link" style="color:<?= get_theme_mod('blog_link_color', '#007bff') ?>;"><?php _e('Read more...', 'justgreat') ?></a>
+        <a href="<?php the_permalink() ?>" class="card-link" style="color:<?php echo esc_attr(get_theme_mod('blog_link_color', '#007bff')) ?>;"><?php esc_html_e('Read more...', 'justgreat') ?></a>
 
     <?php endwhile; wp_reset_postdata(); ?>
 <?php

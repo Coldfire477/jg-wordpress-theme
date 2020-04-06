@@ -23,6 +23,7 @@ class justgreat_customize
 //title color modification
         $wp_customize->add_setting('title_color', array(
             'default' => '#000000',
+            'sanitize_callback' => 'sanitize_hex_color',
             'capability' => 'edit_theme_options',
             'transport' => 'refresh',
         ));
@@ -35,6 +36,7 @@ class justgreat_customize
 //slogan color modification
         $wp_customize->add_setting('slogan_color', array(
             'default' => '#007bff',
+            'sanitize_callback' => 'sanitize_hex_color',
             'capability' => 'edit_theme_options',
             'transport' => 'refresh',
         ));
@@ -47,6 +49,7 @@ class justgreat_customize
 //navbar color modificitaion
         $wp_customize->add_setting('nav_bar_color', array(
             'default' => '#007bff',
+            'sanitize_callback' => 'sanitize_hex_color',
             'capability' => 'edit_theme_options',
             'transport' => 'refresh',
         ));
@@ -60,6 +63,7 @@ class justgreat_customize
         //link color modificitaion
         $wp_customize->add_setting('blog_link_color', array(
             'default' => '#007bff',
+            'sanitize_callback' => 'sanitize_hex_color',
             'capability' => 'edit_theme_options',
             'transport' => 'refresh',
         ));
@@ -73,6 +77,7 @@ class justgreat_customize
         //Contour du carousel color modificitaion
         $wp_customize->add_setting('carousel_contour_color', array(
             'default' => '#007bff',
+            'sanitize_callback' => 'sanitize_hex_color',
             'capability' => 'edit_theme_options',
             'transport' => 'refresh',
         ));
@@ -91,6 +96,7 @@ class justgreat_customize
 
         $wp_customize->add_setting('justgreat_logo', array(
             'default' => '',
+            'sanitize_callback' => 'esc_attr',
             'capability' => 'edit_theme_options',
             'width' => 80,
             'height' => 80,
@@ -112,6 +118,7 @@ class justgreat_customize
 
         $wp_customize->add_setting('justgreat_carousel1', array(
             'default' => '',
+            'sanitize_callback' => 'esc_attr',
             'capability' => 'edit_theme_options',
             'transport' => 'refresh',
         ));
@@ -126,6 +133,7 @@ class justgreat_customize
 
         $wp_customize->add_setting('justgreat_carousel2', array(
             'default' => '',
+            'sanitize_callback' => 'esc_attr',
             'capability' => 'edit_theme_options',
             'width' => 1090,
             'height' => 290,
@@ -141,6 +149,7 @@ class justgreat_customize
 
         $wp_customize->add_setting('justgreat_carousel3', array(
             'default' => '',
+            'sanitize_callback' => 'esc_attr',
             'capability' => 'edit_theme_options',
             'width' => 1090,
             'height' => 290,
@@ -163,6 +172,7 @@ class justgreat_customize
 
         $wp_customize->add_setting('carousel_enable', array(
             'default' => 'enable',
+            'sanitize_callback' => 'sanitize_text_field',
             'capability' => 'edit_theme_options',
             'transport' => 'refresh',
         ));
@@ -182,6 +192,7 @@ class justgreat_customize
         $wp_customize->add_setting('justgreat_fixed_banner', array(
             'default' => '',
             'capability' => 'edit_theme_options',
+            'sanitize_callback' => 'esc_attr',
             'width' => 1090,
             'height' => 290,
             'transport' => 'refresh',
@@ -204,6 +215,7 @@ class justgreat_customize
 
         $wp_customize->add_setting('leftOrRight', array(
             'default' => 'left',
+            'sanitize_callback' => 'sanitize_text_field',
             'capability' => 'edit_theme_options',
             'transport' => 'refresh',
         ));
@@ -228,6 +240,7 @@ class justgreat_customize
 
         $wp_customize->add_setting('description', array(
             'default' => '',
+            'sanitize_callback' => 'sanitize_title',
             'capability' => 'edit_theme_options',
             'transport' => 'refresh',
         ));
@@ -242,6 +255,7 @@ class justgreat_customize
 
         $wp_customize->add_setting('facebook', array(
             'default' => '',
+            'sanitize_callback' => 'sanitize_text_field',
             'capability' => 'edit_theme_options',
             'transport' => 'refresh',
         ));
@@ -254,6 +268,7 @@ class justgreat_customize
 
         $wp_customize->add_setting('instagram', array(
             'default' => '',
+            'sanitize_callback' => 'sanitize_text_field',
             'capability' => 'edit_theme_options',
             'transport' => 'refresh',
         ));
@@ -266,6 +281,7 @@ class justgreat_customize
 
         $wp_customize->add_setting('linkedin', array(
             'default' => '',
+            'sanitize_callback' => 'sanitize_text_field',
             'capability' => 'edit_theme_options',
             'transport' => 'refresh',
         ));

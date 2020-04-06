@@ -10,14 +10,14 @@ class social_widget extends WP_Widget
 
     public function widget($args, $instance)
     {
-        echo $args['before_widget'];
+        echo $args['before_widget'];// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
         if (isset($instance['title'])) {
             $title = apply_filters('widget_title', $instance['title']);
-            echo $args['before_title'] . $title . $args['after_title'];
+            echo $args['before_title'] . esc_html($title) . $args['after_title'];// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
         }
         $social_widget = isset($instance['social_widget']) ? $instance['social_widget'] : '';
-        echo justgreat_socials();
-        echo $args['after_widget'];
+        echo justgreat_socials();// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+        echo $args['after_widget'];// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
     }
 
     public function form($instance)
@@ -26,13 +26,13 @@ class social_widget extends WP_Widget
         $social_widget = isset($instance['social_widget']) ? $instance['social_widget'] : '';
         ?>
         <p>
-        <label for="<?= $this->get_field_id('title') ?>"><?php _e('Title', 'justgreat') ?></label>
+        <label for="<?php echo esc_attr($this->get_field_id('title')) ?>"><?php esc_html_e('Title', 'justgreat') ?></label>
         <input 
             class="widefat" 
             type="text" 
-            name="<?= $this->get_field_name('title') ?>"
-            value="<?= esc_attr($title) ?>" 
-            id="<?= $this->get_field_name('title') ?>">
+            name="<?php echo esc_attr($this->get_field_name('title')) ?>"
+            value="<?php echo esc_attr($title) ?>" 
+            id="<?php echo esc_attr($this->get_field_name('title')) ?>">
         </p>
         <?php
     }

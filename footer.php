@@ -10,7 +10,7 @@
             ])
             ?>
         <div class="copy">
-            <p>Copyright © <?= current_time('Y') ?> <a href="http://just-web.live/" target="blank" style="color:cadetblue !important">JustGreat</a> by Just-Web</p>
+            <p>Copyright <?php echo esc_html(current_time('Y')) ?> - <a href="http://just-web.live/" target="blank" style="color:cadetblue !important">JustGreat</a> by Just-Web</p>
         </div>
 </footer>
 

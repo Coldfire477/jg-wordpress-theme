@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: justgreat\n"
-"POT-Creation-Date: 2020-04-03 10:05+0200\n"
+"POT-Creation-Date: 2020-04-06 17:08+0200\n"
 "PO-Revision-Date: 2020-04-01 23:42+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,130 +16,116 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_n;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: custom/contact-custom.php:13
-msgid "Contact us"
-msgstr ""
-
-#: custom/justgreat-customize.php:19
-msgid "Modify the website colors"
-msgstr ""
-
-#: custom/justgreat-customize.php:31
-msgid "Title color"
-msgstr ""
-
-#: custom/justgreat-customize.php:43
-msgid "Slogan color"
-msgstr ""
-
-#: custom/justgreat-customize.php:55
-msgid "Navigation bar color"
-msgstr ""
-
-#: custom/justgreat-customize.php:68
-msgid "Links color"
-msgstr ""
-
-#: custom/justgreat-customize.php:81
-msgid "Carousel contour color"
-msgstr ""
-
-#: custom/justgreat-customize.php:87 custom/justgreat-customize.php:101
-msgid "Add / Modify the logo"
-msgstr ""
-
-#: custom/justgreat-customize.php:108
-msgid "Carousel pictures"
-msgstr ""
-
-#: custom/justgreat-customize.php:120
-msgid "Select your pictures for the carousel"
-msgstr ""
-
-#: custom/justgreat-customize.php:121
-msgid "The pictures must be at least 1090px width, otherwise it won't work !"
-msgstr ""
-
-#: custom/justgreat-customize.php:159
-msgid "Carousel settings"
-msgstr ""
-
-#: custom/justgreat-customize.php:171
-msgid "Enable / Disable the carousel"
-msgstr ""
-
-#: custom/justgreat-customize.php:176
-msgid "Enable"
-msgstr ""
-
-#: custom/justgreat-customize.php:177
-msgid "Fixed banner"
-msgstr ""
-
-#: custom/justgreat-customize.php:178
-msgid "Disable"
-msgstr ""
-
-#: custom/justgreat-customize.php:191
-msgid "Fixed banner picture"
-msgstr ""
-
-#: custom/justgreat-customize.php:192
-msgid "The picture must be at least 1090px width, otherwise it won't work !"
-msgstr ""
-
-#: custom/justgreat-customize.php:200
-msgid "Column settings"
-msgstr ""
-
-#: custom/justgreat-customize.php:212
-msgid "Widget column side"
-msgstr ""
-
-#: custom/justgreat-customize.php:217
-msgid "Left"
-msgstr ""
-
-#: custom/justgreat-customize.php:218
-msgid "Right"
-msgstr ""
-
-#: custom/justgreat-customize.php:224
-msgid "Config my socials"
-msgstr ""
-
-#: custom/justgreat-customize.php:236
-msgid "Paste your social links in the inputs, the format must be like \"http://www.mysocial.com\""
-msgstr ""
-
-#: index.php:22 widgets/widget-function.php:16
-msgid "Read more..."
-msgstr ""
-
-#: index.php:25
-msgid "Aucun articles"
-msgstr ""
-
-#: searchform.php:2 searchform.php:3
-msgid "Search"
-msgstr ""
-
-#: setupTheme/justgreat-settings.php:23 setupTheme/justgreat-settings.php:24
+#: admin/justgreat-settings.php:23 admin/justgreat-settings.php:24
 msgid "Great start !"
 msgstr ""
 
-#: setupTheme/justgreat-settings.php:33
-msgid "Take a great start with our JustGreat wordpress theme"
+#: comments.php:74
+msgid "Newer Comments"
 msgstr ""
 
-#: setupTheme/justgreat-settings.php:34
-msgid "This theme has been made to be visually lite, easy to use and fully free."
+#: comments.php:75
+msgid "Older Comments"
 msgstr ""
 
-#: sidebar-homepage.php:6
-msgid "Don't forget to configure your widgets"
+#: inc/class-justgreat-walker-comment.php:69
+#, php-format
+msgid "%1$s at %2$s"
 msgstr ""
 
-#: widgets/latestNews-widget.php:29 widgets/social-widget.php:29
-msgid "Title"
+#: page.php:6
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:19
+msgid "Modify the website colors"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:32
+msgid "Title color"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:45
+msgid "Slogan color"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:58
+msgid "Navigation bar color"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:72
+msgid "Links color"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:86
+msgid "Carousel contour color"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:92
+#: template-parts/justgreat-customize.php:107
+msgid "Add / Modify the logo"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:114
+msgid "Carousel pictures"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:127
+msgid "Select your pictures for the carousel"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:128
+msgid "The pictures must be at least 1090px width, otherwise it won't work !"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:168
+msgid "Carousel settings"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:181
+msgid "Enable / Disable the carousel"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:186
+msgid "Enable"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:187
+msgid "Fixed banner"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:188
+msgid "Disable"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:202
+msgid "Fixed banner picture"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:203
+msgid "The picture must be at least 1090px width, otherwise it won't work !"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:211
+msgid "Column settings"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:224
+msgid "Widget column side"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:229
+msgid "Left"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:230
+msgid "Right"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:236
+msgid "Config my socials"
+msgstr ""
+
+#: template-parts/justgreat-customize.php:249
+msgid "Paste your social links in the inputs, the format must be like \"http://www.mysocial.com\""
 msgstr ""
